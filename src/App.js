@@ -3,6 +3,7 @@ import { Component } from 'react';
 
 class App extends Component {
 
+  // only necessary for Class
   constructor(){
     super();
     this.state = {
