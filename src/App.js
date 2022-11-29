@@ -7,7 +7,7 @@ class App extends Component {
     super();
     this.state = {
       monsters: [],
-      searchField: [],
+      searchField: "",
     };
   }
 
@@ -28,7 +28,7 @@ class App extends Component {
 
   render() {
     const filteredMonsters = this.state.monsters.filter((monster) => {
-        return monster.name.toLocaleLowerCase().includes(this.state.searchField);
+      return monster.name.toLocaleLowerCase().includes(this.state.searchField);
     });
     return (
       <div className="App">
